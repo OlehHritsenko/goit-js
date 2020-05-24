@@ -1,19 +1,13 @@
 let inputNumber;
 let total = 0;
 
-while (true) {
-    let inputNumber = prompt('Введите число');
-    
-    if (inputNumber === null) {
-        break;
-    }
-
-    inputNumber = Number(inputNumber);
-    const isNumber = Number.isNaN(inputNumber)
+do {
+    inputNumber = prompt('Введите число');
+    const isNumber = Number.isNaN(+inputNumber);
     if (isNumber === true) {
         continue;
     }
-    total += inputNumber;
-}
+    total += +inputNumber;
+} while (inputNumber !== null);
 
 console.log(`Общая сумма чисел равна ${total}`);
