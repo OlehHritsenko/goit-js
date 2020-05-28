@@ -4,7 +4,7 @@ let total = 0;
 do {
     inputNumber = prompt('Введите число');
     const isNumber = Number.isNaN(+inputNumber);
-    if (isNumber === true) {
+    if (isNumber) {
         continue;
     }
     total += +inputNumber;

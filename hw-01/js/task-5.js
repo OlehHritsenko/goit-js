@@ -17,7 +17,7 @@ if (country === null) {
             console.log(`Доставка в ${country} будет стоить 80 кредитов`)
             break;
         case 'ямайка':
-            console.log(`Доставка в ${country} будет стоить 12 кредитов`)
+            console.log(`Доставка в ${country} будет стоить 120 кредитов`)
             break;
         default:
             alert('В вашей стране доставка не доступна')
