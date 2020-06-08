@@ -6,20 +6,15 @@ const products = [
   ];
   
 const getAllPropValues = function(arr, prop) {
-    const array = [];
+    let array = [];
 
-    for (const element of arr) {
-      let value = element[prop];
-  
-      if (value !== undefined) {
-        array.push(value);
-      }
+    for (let element of arr) {
+      if (prop in element) {
+        array.push(element[prop]);
     }
-  
+}
     return array;
 };
-
-console.log(getAllPropValues);
 
 console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
   

@@ -1,20 +1,18 @@
 const findBestEmployee = function(employees) {
     let numberTask = 0;
 
-    for (let value of Object.values(employees)) {
-        if (numberTask < value) {
-            numberTask = value;
-        }
-    } const entries = Object.entries(employees)
-    for (let entrie of entries) {
+    for (let key in employees) {
+      if (numberTask <= employees[key]) {
+          numberTask = employees[key];
+      }
+    }
+    for (let entrie of Object.entries(employees)) {
         if (entrie.includes(numberTask)) {
-            return entrie[0];
+          return entrie[0];
         }
     }
 };
 
-console.log(findBestEmployee)
-  
   console.log(
     findBestEmployee({
       ann: 29,
