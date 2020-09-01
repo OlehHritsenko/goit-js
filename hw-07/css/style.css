@@ -1,0 +1,31 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+#gallery {
+    padding: 50px;
+    display: flex;
+    margin: 0;
+}
+.gallery__card {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.gallery__img {
+    width: 100%;
+    display: block;
+}
+
+#validation-input {
+    border: 2px solid #888080;
+}
+
+#validation-input.valid {
+    border-color: #09940e;
+}
+
+#validation-input.invalid {
+    border-color: #eb1607;
+}
