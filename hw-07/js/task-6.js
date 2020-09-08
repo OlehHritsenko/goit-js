@@ -9,8 +9,6 @@ const verification = (event) => {
         } else {
             inputRef.classList.add('invalid');
         }
-    } else {
-        inputRef.className = '';
     }
 }
 
